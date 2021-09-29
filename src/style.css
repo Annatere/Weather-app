@@ -60,7 +60,7 @@ body {
   font-size: 15px;
   line-height: 20px;
   text-align: right;
-  margin-top: -180px;
+  margin-top: 0px;
 }
 .vl {
   border-left: 3px solid black;
@@ -68,5 +68,5 @@ body {
   position: absolute;
   left: 50.5%;
   margin-left: -3px;
-  margin-top: -180px;
+  margin-top: 0px;
 }
