@@ -16,17 +16,17 @@ body {
   align-items: center;
 }
 .container {
-  border: 2.5px;
+  border: 1.9px;
   border-style: solid;
-  border-color: black;
-  padding: 2.5em;
+  border-color: rgb(43, 41, 41);
+  padding: 2.3em;
   background-color: rgb(245, 236, 159);
   max-width: 500px;
-  border-radius: 20px;
+  border-radius: 25px;
 }
 #barraProcura {
   text-align: center;
-  margin-top: 5px;
+  margin-top: 3px;
 }
 
 .image {
@@ -75,4 +75,17 @@ body {
   text-align: center;
   margin-top: 19px;
   margin-bottom: -20px;
+}
+#celsius-link{
+  font-size: 22px;
+  margin-right: -22px;
+
+  
+}
+#fahrenheit-link{
+  font-size: 22px;
+  margin-left: -22px;
+}
+.separador{
+  font-size: 20px;
 }
