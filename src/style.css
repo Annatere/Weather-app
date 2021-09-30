@@ -26,11 +26,10 @@ body {
 }
 #barraProcura {
   text-align: center;
-  margin-top: 3px;
+  margin-top: 10px;
 }
 
 #icon {
-  margin-top: 30px;
   display: block;
   margin-left: auto;
   margin-right: auto;
@@ -38,18 +37,24 @@ body {
 }
 .numero {
   text-align: center;
-  font-size: 50px;
+  font-size: 60px;
   font-weight: bolder;
-  margin-top: px;
+  margin-top: -30px;
+  margin-bottom:50px ;
+  
+  
 }
 .diaHoraLocal {
   text-align: center;
+  margin-top: -60px;
+
 }
 .condiciones {
   text-align: center;
   margin-bottom: 25px;
   font-size: 20px;
   text-transform: capitalize;
+  
 }
 .primero {
   font-size: 15px;
@@ -82,14 +87,21 @@ body {
 #celsius-link{
   font-size: 22px;
   margin-right: -22px;
+  text-align: center;
+  margin-top: 30px;
+
 
   
 }
 #fahrenheit-link{
   font-size: 22px;
   margin-left: -22px;
+  text-align: center;
+  margin-top: 20px;
+  
   
 }
 .separador{
   font-size: 20px;
 }
+
