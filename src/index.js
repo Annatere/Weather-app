@@ -33,14 +33,19 @@ fecha.innerHTML = `${dia} ${hours}:${minutes}`;
 
 function showFahrenheitTemperature(event) {
   event.preventDefault();
-  let fahTemperature = (17 * 9) / 5 + 32;
+  let fahTemperature = (celsiusTemperature * 9) / 5 + 32;
+  celsiusLink.classList.remove("active");
+  fahrenheitLink.classList.add("active");
   let temperatureElement = document.querySelector("#temperature");
   temperatureElement.innerHTML = Math.round(fahTemperature);
 }
 
+let celsiusTemperature=null;
+
 function showCelsiusTemperature(event) {
   event.preventDefault();
-  let celsiusTemperature = 17;
+  celsiusLink.classList.add("active");
+  fahrenheitLink.classList.remove("active");
   let temperatureElement = document.querySelector("#temperature");
   temperatureElement.innerHTML = Math.round(celsiusTemperature);
 }
@@ -80,6 +85,9 @@ function displayTemperature(response) {
   let iconElement= document.querySelector("#icon");
   iconElement.setAttribute("src", `https://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`);
   iconElement.setAttribute("alt", response.data.weather[0].description);
+
+  celsiusTemperature = response.data.main.temp;
+
 }
 ////
 function search(city) {
@@ -118,3 +126,5 @@ function getPosition(event) {
 
 let currentLocationButton = document.querySelector("#currentButton");
 currentLocationButton.addEventListener("click", getPosition);
+
+search("Lisbon");
