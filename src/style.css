@@ -41,6 +41,7 @@ body {
   font-weight: bolder;
   margin-top: -30px;
   margin-bottom:50px ;
+  line-height: 1;
   
   
 }
@@ -109,4 +110,8 @@ body {
   color:black;
   cursor: default;
   text-decoration: none;
+}
+.units{
+  vertical-align: super;
+
 }
