@@ -124,6 +124,17 @@ function getPosition(event) {
   navigator.geolocation.getCurrentPosition(GetCurrentLocation);
 }
 
+function displayForecast(){
+  let forecastElement = document.querySelector("#forecast");
+
+  let forecastHTML = "";
+  forecastHTML =
+  forecastHTML = forecastHTML +  `<div>Friday <span class="tempMax">20°</span><span class="tempMin">15°</span><img src="https://openweathermap.org/img/wn/50d@2x.png " width="36"/></div>`;
+
+  forecastElement.innerHTML = forecastHTML
+
+}
+
 let currentLocationButton = document.querySelector("#currentButton");
 currentLocationButton.addEventListener("click", getPosition);
 
