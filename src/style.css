@@ -2,7 +2,7 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: border-box black;
-  background-color: rgb(216, 227, 241);
+  background-color: #fdffcd;
   font-size: 16px;
   font-family: monospace;
   font-weight: bold;
@@ -20,7 +20,7 @@ body {
   border-style: solid;
   border-color: rgb(43, 41, 41);
   padding: 2.3em;
-  background-color: rgb(245, 236, 159);
+  background-color: #ffebbb;
   max-width: 500px;
   border-radius: 25px;
 }
