@@ -59,7 +59,7 @@ celsiusLink.addEventListener("click", showCelsiusTemperature);
 ///
 function getForecast(coordinates){
   let apiKey = "b35c686ba9565ba0ab254c2230937552";
-  let apiUrl = `https://api.openweathermap.org/data/2.5/onecall?lat${coordinates.lat}&lon=${coordinates.lon}&appid=${apiKey}&units=metric`;
+  let apiUrl = `https://api.openweathermap.org/data/2.5/onecall?lat=${coordinates.lat}&lon=${coordinates.lon}&appid=${apiKey}&units=metric`;
 
   axios.get(apiUrl).then(displayForecast);
 
@@ -88,8 +88,7 @@ function displayTemperature(response) {
   let minElement = document.querySelector("#min");
   minElement.innerHTML = Math.round(response.data.main.temp_min);
 
-  let feelElement = document.querySelector("#feel");
-  feelElement.innerHTML = Math.round(response.data.main.feels_like);
+
 
   let iconElement= document.querySelector("#icon");
   iconElement.setAttribute("src", `https://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`);
@@ -190,6 +189,7 @@ let currentLocationButton = document.querySelector("#currentButton");
 currentLocationButton.addEventListener("click", getPosition);
 
 search("Lisbon");
+
 
 
 
